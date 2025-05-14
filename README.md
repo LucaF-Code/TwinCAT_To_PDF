@@ -13,6 +13,8 @@
 
 This tool is especially useful for documentation, archiving, or code reviews where a printable or shareable version of the PLC logic is required.
 
+> ⚠️ **Note:** This tool only supports **Structured Text (ST)**. Other TwinCAT languages like LD, FBD, or SFC are not supported.
+
 ## 🗂️ Supported File Types
 
 - `.TcPOU` – Function Blocks, Functions, Programs
@@ -33,6 +35,10 @@ This tool is especially useful for documentation, archiving, or code reviews whe
 
 ## 🚀 Getting Started
 
-### Prerequisites
+To generate a PDF from the XML files of your TwinCAT project, run the following command:
 
+```bash
+python TwinCAT_To_PDF.py /path/to/your/TwinCAT_project output_document.pdf
+
+### Prerequisites
 - Python 3.10+
