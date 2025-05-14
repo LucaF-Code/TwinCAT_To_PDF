@@ -39,6 +39,6 @@ To generate a PDF from the XML files of your TwinCAT project, run the following 
 
 ```bash
 python TwinCAT_To_PDF.py /path/to/your/TwinCAT_project output_document.pdf
-
+```
 ### Prerequisites
 - Python 3.10+
