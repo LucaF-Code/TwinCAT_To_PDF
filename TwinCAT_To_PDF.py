@@ -277,9 +277,10 @@ def generate_pdf(code_files_by_folder, output_pdf):
                                 'FUNCTION_BLOCK', 'PROGRAM', 'IMPLEMENTS', 'INTERFACE', 'VAR', 'END_VAR', 'EXTENDS',
                                 'PROPERTY', 'TYPE', 'END_TYPE', 'STRUCT', 'END_STRUCT', 'POINTER', 'TO', 'DO',
                                 'FOR', 'END_FOR', 'END_IF', 'IF', 'AND', 'AND_THEN', 'OR_ELSE', 'ELSE', 'WHILE',
-                                'REPEAT', 'UNTIL', 'CASE', 'OF', 'ADR', 'XOR', 'VAR_INPUT', 'VAR_OUTPUT', 'PERSISTENT',
-                                'RETAIN', 'AT', 'ARRAY', 'OF', 'METHOD', 'THIS^', 'NOT', 'THEN', 'ELSIF',
-                                'REFERENCE', 'REF=', 'PUBLIC', 'PRIVATE', 'CONSTANT', 'VAR_GLOBAL'
+                                'REPEAT', 'UNTIL', 'CASE', 'OF', 'ADR', 'XOR', 'VAR_INPUT', 'VAR_OUTPUT', 'PERSISTENT','UPPER_BOUND',
+                                'RETAIN', 'AT', 'ARRAY', 'OF', 'METHOD', 'THIS', 'NOT', 'THEN', 'ELSIF', 'LOWER_BOUND',
+                                'REFERENCE', 'REF=', 'PUBLIC', 'PRIVATE', 'CONSTANT', 'VAR_GLOBAL', 'RETURN','VAR_IN_OUT', 'EXIT',
+                                'END_CASE','FUNCTION'
                            ]   
                            if "//" in line:
                                 code_part, comment_part = line.split("//", 1)
